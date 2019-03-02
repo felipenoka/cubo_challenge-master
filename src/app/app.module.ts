@@ -4,23 +4,42 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { ServiceComponent } from './service/service.component';
+import { MainComponent } from './main/main.component';
+import { FooterComponent } from './footer/footer.component';
+
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { ChartComponent } from './main/chart/chart.component';
+import { MainService } from './main/main.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent,
-    AboutComponent,
-    ServiceComponent
+    MainComponent,
+    FooterComponent,
+    ChartComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgCircleProgressModule.forRoot({
+      radius: 75,
+      animation: true,
+      titleFontSize: "40",
+      showSubtitle: false,
+      outerStrokeWidth: 10,
+      innerStrokeWidth: 8,
+      outerStrokeColor: "#404a58",
+      innerStrokeColor: "#fff",
+      space: -9,
+      outerStrokeLinecap: "butt",
+      imageHeight: 30,
+      imageWidth: 30,
+      showUnits: false,
+      
+    })
   ],
-  providers: [],
+  providers: [MainService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
