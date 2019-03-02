@@ -1,1 +1,245 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Maven Pro', sans-serif;;
+  src: url("https://fonts.googleapis.com/css?family=Maven+Pro") format("opentype");
+}
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2); }
+  
+  #nav-cubo .nav-item-color {
+    background-color: #fff;
+    border: 0px;
+    color: #868686;
+    border-radius: 2.5px;
+    width: 100px;
+    text-align: center;
+    margin-left: 15px;
+    text-transform: uppercase; }
+  
+  #nav-cubo .nav-item-color a {
+    position: flex;
+    border-radius: 2.5px; }
+  
+  #nav-cubo .nav-item-color:hover,
+  #nav-cubo .nav-item-color a:hover {
+    background-color: #e76924;
+    color: #fff; }
+  
+  .slider {
+    max-width: 100%;
+    height: 550px; }
+  
+  .carousel_cubo {
+    position: relative;
+    background-image: url("assets/img/1.png"), linear-gradient(to right, #fcfcfc, #ebebeb);
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    background-position: center 87px;
+    background-attachment: fixed;
+    height: 550px;
+    margin: 0 auto;
+    width: 100%; }
+  
+  .message-box-1,
+  .message-box-2,
+  .message-box-3 {
+    background-color: rgba(231, 105, 36, 0.85);
+    color: #fff;
+    position: absolute;
+    max-width: 426px;
+    max-height: 100%;
+    padding: 20px; }
+  
+  .message-box-1 {
+    left: 220px;
+    bottom: 100px; }
+  
+  .message-box-2 {
+    left: 220px;
+    bottom: 200px; }
+  
+  .message-box-3 {
+    left: 220px;
+    bottom: 220px; }
+  
+  .title-box {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase; }
+  
+  .text-box {
+    text-align: left;
+    font-size: 20px; }
+  
+  .carousel-indicators {
+    margin-top: 10px;
+    position: relative; }
+  
+  .carousel-indicators li {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 2px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff4;
+    border: 1px solid #e76924;
+    border-radius: 10px; }
+  
+  .carousel-indicators .active {
+    width: 14px;
+    height: 14px;
+    margin: 2px;
+    border: 0px solid #e76924;
+    background-color: #e76924; }
+  
+  .box-about {
+    position: relative;
+    width: 68%; }
+  
+  .about {
+    background-color: #ffc40c; }
+  
+  .img-parallax-1 {
+    display: block;
+    padding-left: 660px;
+    padding-top: 200px;
+    width: 105%; }
+  
+  .img-parallax-2 {
+    display: block;
+    padding-left: 570px;
+    padding-top: 150px;
+    width: 105%; }
+  
+  .scene {
+    z-index: 10;
+    max-height: 770px;
+    margin: 0 auto;
+    padding: 0; }
+  
+  .btn {
+    border-radius: 0;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 150px; }
+  
+  .btn-success {
+    background-color: #87bf52; }
+  
+  a.btn-success:hover {
+    background-color: #74a546;
+    color: #fff;
+    border: 1px solid #74a546; }
+  
+  a.btn-success:link {
+    background-color: #28a745;
+    color: #fff; }
+  
+  .btn-secundary {
+    background-color: #00b8e2;
+    border: 1px solid #fff;
+    color: #fff; }
+  
+  .btn-secundary:hover {
+    font-weight: bold;
+    background-color: #fff;
+    color: #00b8e2; }
+  
+  #signup {
+    background-color: #00b8e2; }
+  
+  .form-control {
+    height: 50px;
+    width: 100%;
+    padding-left: 15px;
+    border: 0 solid #fff;
+    border-radius: 0;
+    font-family: Arial, FontAwesome; }
+  
+  .social-icons a {
+    display: inline-block;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: #fff !important;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-right: 0.5rem; }
+  
+  .face {
+    background-color: #3978b9; }
+  
+  .face:hover {
+    background-color: #397FFF; }
+  
+  .gplus {
+    background-color: #c45749; }
+  
+  .gplus:hover {
+    background-color: #c40f0f; }
+  
+  .twt {
+    background-color: #00aff2; }
+  
+  .twt:hover {
+    background-color: #008bc2; }
+  
+  .yt {
+    background-color: #96515a; }
+  
+  .yt:hover {
+    background-color: #9e3644; }
+  
+  .social-icons a:last-child {
+    margin-right: 0; }
+  
+  .footer {
+    height: 50px;
+    text-align: center;
+    background-color: #828282;
+    margin-left: auto;
+    margin-right: auto; }
+  
+  .footer span {
+    color: #FFF; }
+  
+  @media (max-width: 599px) {
+    .message-box-1,
+    .message-box-2,
+    .message-box-3 {
+      position: relative;
+      max-width: 100%;
+      max-height: 100%;
+      padding: 20px;
+      left: auto;
+      bottom: auto;
+      margin-top: 70px; }
+    .service {
+      text-align: center; }
+    .social-icons a {
+      margin-right: 0;
+      margin-bottom: 5px; }
+    .address-cubo {
+      display: none; } }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+  
+  body {
+    font-family: 'Maven Pro', sans-serif;;
+    font-size: 1rem; }
+  
+  h1 {
+    font-size: 30px; }
+  
+  a {
+    text-decoration: none; }
+  
+  .logo img {
+    height: 70px; }
+  
