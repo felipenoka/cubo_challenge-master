@@ -4,6 +4,19 @@
 mat-icon {
   font-family: FontAwesome;
 }
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bold !important;
+}
+a {
+  cursor: pointer;
+}
+.text{
+    font-family: "Roboto"
+}
 .navbar {
     background-color: #fff;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2); }
@@ -95,6 +108,11 @@ mat-icon {
     border: 0px solid #e76924;
     background-color: #e76924; }
   
+  .sub-text-about p {
+    font-weight: bold;
+    color: #404a58;
+  }
+  
   .box-about {
     position: relative;
     width: 68%; }
@@ -103,12 +121,14 @@ mat-icon {
     background-color: #ffc40c; }
   
   .img-parallax-1 {
+    position: relative;
     display: block;
     padding-left: 660px;
     padding-top: 200px;
     width: 105%; }
   
   .img-parallax-2 {
+    position: relative;
     display: block;
     padding-left: 570px;
     padding-top: 120px;
@@ -123,16 +143,18 @@ mat-icon {
   .btn {
     border-radius: 0;
     color: #fff;
-    border: 1px solid #fff;
-    width: 150px; }
+    border: 0px solid #fff;
+    width: 150px;
+    cursor: pointer; }
   
   .btn-success {
-    background-color: #87bf52; }
+    background-color: #87bf52;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12)}
   
   a.btn-success:hover {
     background-color: #74a546;
     color: #fff;
-    border: 1px solid #74a546; }
+    border: 0px solid #74a546; }
   
   a.btn-success:link {
     background-color: #28a745;
@@ -151,6 +173,10 @@ mat-icon {
   #signup {
     background-color: #00b8e2; }
   
+  #resultado {
+    display: none;
+    text-align: center;
+  }
   .form-control {
     height: 50px;
     width: 100%;
@@ -206,6 +232,71 @@ mat-icon {
   
   .footer span {
     color: #FFF; }
+    #myChart {
+      width: 220px !important;
+      height: 220px !important;
+      margin-left: 100px;
+    }
+    .card-body-chart {
+      float: left;
+      padding: 15px;
+    }
+    
+    .legendChart {
+      margin-top: 30px;
+      float: right;
+      font-weight: bold;
+      position: relative;
+      
+    }
+    .legendChart li {
+      margin-bottom: 10px;
+      vertical-align: middle;
+      
+    }
+    .legendChart li span {
+      width: 30px;
+      height: 30px;
+      border-radius: 5px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 15px;
+    }
+    
+    .chart_1{
+      color:#2d97de;
+    }
+    .chart_1 span {
+      background-color:#2d97de;
+    }
+    .chart_2{
+      color:#15b999;
+    }
+    .chart_2 span {
+      background-color:#15b999;
+    }
+    .chart_3{
+      color:#9c55b8;
+    }
+    .chart_3 span {
+      background-color:#9c55b8;
+    }
+    .chart_4{
+      color:#bdc3c7;
+    }
+    .chart_4 span {
+      background-color:#bdc3c7;
+    }
+    .chart_5{
+      color:#e94b35;
+    }
+    .chart_5 span {
+      background-color:#e94b35;
+    }
+    
+    li {
+      list-style: none;
+    }
   
   @media (max-width: 599px) {
     .message-box-1,
