@@ -31,7 +31,6 @@ participations: Number[];
     let ctx = document.getElementById('myChart')  
     this.mainService.getGraph()
     .subscribe(res => {
-      console.log(res)
       this.names = res.map(_ => _.name + ' ' + _.lastname);
       this.participations = res.map(_ => _.participation);
       this.chart = new Chart(ctx, {
